@@ -9,10 +9,13 @@ const UsersList = () => {
     const [users] = useContext(MyContext)
     
     return (
-        <div className="container">
-            {users.map(user => (
-                <User user={user} key={user.id}/>
-            ))}
+        <div>
+            <h1 style={{textAlign: "center"}}>User List</h1>
+            <div className="container">
+                {users.map(user => (
+                    <User user={user} key={user.id}/>
+                ))}
+            </div>
         </div>
     )
 }
