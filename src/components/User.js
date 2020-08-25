@@ -1,13 +1,17 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+import './User.css'
+
 const User = ({user}) => {
     return (
         <div>
-            <div style={{border: "1px solid red", padding: "10px"}}>
+            <div className="card">
                 <p>Name: {user.name}</p>
                 <p>Company: {user.company.name}</p>
-                <Link to={`/user-info/${user.id}`}>View User</Link>
+                <Link to={`/user-info/${user.id}`}>
+                    <button>view user</button>
+                </Link>
             </div>
         </div>
     )
