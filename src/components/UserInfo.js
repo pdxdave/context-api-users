@@ -19,7 +19,8 @@ const UserInfo = (props) => {
             {users.map(user => {
                 return (
                     <div key={user.id}>
-                        <p>{user.name}</p>
+                        <p>Name: {user.name}</p>
+                        
                     </div>
                 )
             })}
